@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>환율</title>
+    </head>
+    <body>
+        <table>
+
+            <tbody>
+                <tr>
+                    <td>국가</td>
+                    <td>환율</td>
+                </tr>
+                
+                {% for i in t: %}
+                <tr>
+                    <td>{{i["country"]}}</td>
+                    <td>{{ i["exch"] }}</td>
+               </tr>
+                {% endfor %}
+                
+            </tbody>
+
+        </table>
+    </body>
+</html>
